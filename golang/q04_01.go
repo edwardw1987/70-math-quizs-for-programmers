@@ -6,23 +6,8 @@ func main() {
     fmt.Println(cutBarBFS(3, 8))
     fmt.Println(cutBarBFS(3, 20))
     fmt.Println(cutBarBFS(5, 100))
-    fmt.Println(cutBarBin(3, 8))
-    fmt.Println(cutBarBin(3, 20))
-    fmt.Println(cutBarBin(5, 100))
 }
-func cutBarBin(m, n int) int {
-    ans := 0
-    for n > 1 {
-        ans++
-        x := n / 2
-        n -= n / 2
-        for x > m {
-            ans++
-            x /= 2
-        }
-    }
-    return ans
-}
+
 func cutBarBFS(m, n int) int {
     // 广度优先搜索
     a := []int{n}
