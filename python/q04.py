@@ -28,6 +28,12 @@ def cutBarBFS(m, n):
         res += 1
     return res
 
+def cutBarDFS(m, n, now):
+    if now >= n:
+        return 0
+    if now < m:
+        return 1 + cutBarDFS(m, n, now * 2)
+    return 1 + cutBarDFS(m, n, now + m)
 
 print cutBar(3, 8)
 print cutBar(3, 20)
