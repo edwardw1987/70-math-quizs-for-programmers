@@ -2,7 +2,7 @@
 # 动态规划
 
 
-def slove(m, n):
+def solve(m, n):
     m, n = m + 1, n + 1
     F = [[0] * n for _ in range(m)]
     F[0][0] = 1
