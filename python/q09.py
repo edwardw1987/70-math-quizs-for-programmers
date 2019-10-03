@@ -17,4 +17,4 @@ def solve(m, n):
     return F[m - 1][n - 2] + F[m - 2][n - 1]
 
 
-print(slove(20, 10))
+print(solve(20, 10))
