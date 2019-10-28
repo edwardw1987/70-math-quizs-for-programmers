@@ -5,3 +5,9 @@ for i in range(1,100+1):
           flag ^= 1
   if flag:
       print i
+
+
+
+# @leetcode 319. bulbSwitch
+
+int(math.sqrt(100))
